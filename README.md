@@ -76,5 +76,5 @@ This project is for educational purposes.
 [![View Figma](https://www.figma.com/proto/G13jrslnDLHz7kTF5YJMqH/Untitled?node-id=1-2&starting-point-node-id=1%3A2)]
 
 ### 🎥 YouTube Demo  
-[![Watch Video](https://img.shields.io/badge/Watch_on_YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)]
+[![Watch Video](https://youtu.be/gc2aFVO6OcE?si=K5xoGhOGRP4fBkEg)]
 
