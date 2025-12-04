@@ -73,8 +73,8 @@ This project is for educational purposes.
 ## 🔗 Project Resources
 
 ### 🎨 Figma Design  
-[![View Figma](https://www.figma.com/proto/G13jrslnDLHz7kTF5YJMqH/Untitled?node-id=1-2&starting-point-node-id=1%3A2)]
+[View Figma](https://www.figma.com/proto/G13jrslnDLHz7kTF5YJMqH/Untitled?node-id=1-2&starting-point-node-id=1%3A2)
 
 ### 🎥 YouTube Demo  
-[![Watch Video](https://youtu.be/gc2aFVO6OcE?si=K5xoGhOGRP4fBkEg)]
+[Watch Video](https://youtu.be/gc2aFVO6OcE?si=K5xoGhOGRP4fBkEg)
 
