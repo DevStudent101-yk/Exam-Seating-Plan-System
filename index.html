@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Exam Seating — Student Lookup</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- Existing global styles -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- NEW PAGE-SPECIFIC STYLES -->
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body class="index-page">
+
+  <!-- HEADER BAR (Figma style) -->
+  <header class="index-header">
+    <div class="logo-circle">
+      <img src="images/student-icon.png" alt="Student Icon">
+    </div>
+    <div class="title">Nust Exam Seating Plan</div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="index-main">
+    <form id="lookupForm">
+      
+      <label class="index-label">Enter Your CMS ID :</label>
+
+      <input 
+        id="cms" 
+        class="index-input" 
+        placeholder="CMS ID"
+      >
+      <br>
+      <button type="submit" class="index-btn">Check Seat</button>
+    </form>
+
+    <a href="admin-login.html" class="index-admin-link">Login as Admin</a>
+  </main>
+
+  
+
+  <script src="js/script.js"></script>
+</body>
+</html>

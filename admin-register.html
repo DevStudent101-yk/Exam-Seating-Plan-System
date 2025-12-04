@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Admin Registration</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/admin-register.css">
+</head>
+
+<body>
+
+  <!-- Blue Top Header -->
+  <header class="top-header">
+    <div class="logo-circle">
+      <img src="images/student-icon.png" alt="logo">
+    </div>
+    <h1>Admin Registration</h1>
+  </header>
+
+  <!-- Main Registration Form -->
+  <main class="register-container">
+
+    <form id="adminRegisterForm" class="register-card">
+
+      <label>Full Name</label>
+      <div class="input-row">
+        <input id="regName" name="username" placeholder="Enter full name" required>
+      </div>
+
+      <label>Email Address</label>
+      <div class="input-row">
+        <input id="regEmail" name="email" type="email" placeholder="Enter email" required>
+      </div>
+
+      <label>Password</label>
+      <div class="input-row">
+        <input id="regPass" name="password" type="password" placeholder="Enter password" required>
+      </div>
+
+      <label>Confirm Password</label>
+      <div class="input-row">
+        <input id="regPass2" type="password" placeholder="Re-enter password" required>
+      </div>
+
+      <button class="signup-btn" type="submit">Sign up</button>
+
+      <p class="login-text">
+        Already have an account?
+        <a href="admin-login.html">Login</a>
+      </p>
+
+      <p id="regMsg" class="error-msg"></p>
+
+    </form>
+
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+
+/* index.css — styles only for student lookup page */
+
+/* RESET LOCAL PAGE PADDING */
+body.index-page {
+  padding: 0;
+  margin: 0;
+  background: #dcebfa; /* light blue like Figma */
+  font-family: Inter, system-ui, sans-serif;
+}
+
+/* ===========================
+   TOP BLUE HEADER BAR
+=========================== */
+.index-header {
+  background: #144a78; /* Figma dark blue */
+  padding: 24px 40px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.index-header .logo-circle {
+  width: 90px;
+  height: 90px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.index-header img {
+  width: 65px;
+  height: 65px;
+}
+
+/* Title text */
+.index-header .title {
+  color: white;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+/* ===========================
+   MAIN PANEL AREA
+=========================== */
+.index-main {
+  background: #dcebfa;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* Label */
+.index-label {
+  font-size: 20px;
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 6px;
+}
+
+/* Input line */
+.index-input {
+  width: 60%;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 12px 4px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #555;
+  font-size: 18px;
+  outline: none;
+  text-align: center;
+}
+
+/* Button */
+.index-btn {
+  margin-top: 28px;
+  background: #b51217; /* Red from Figma */
+  color: white;
+  border: none;
+  padding: 12px 26px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.index-btn:hover {
+  opacity: 0.9;
+}
+
+/* Admin link */
+.index-admin-link {
+  display: block;
+  margin-top: 30px;
+  font-size: 18px;
+  text-decoration: underline;
+  color: #000;
+  cursor: pointer;
+}
+
+
+/* Responsive */
+@media (max-width: 700px) {
+  .index-header {
+    padding: 18px;
+    flex-direction: column;
+  }
+
+  .index-header .title {
+    font-size: 24px;
+  }
+
+  .index-input {
+    width: 90%;
+  }
+
+  .index-btn {
+    width: 70%;
+  }
+}

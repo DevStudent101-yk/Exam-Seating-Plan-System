@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Admin Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/admin-dashboard.css">
+</head>
+
+<body>
+
+<!-- BLUE HEADER -->
+<header class="top-header">
+  <div class="logo-circle">
+    <img src="images/student-icon.png" alt="logo">
+  </div>
+
+  <h1>Admin Dashboard</h1>
+
+  <a href="admin-login.html" class="logout-link">Log Out</a>
+</header>
+
+<!-- CONTENT AREA -->
+<main class="dashboard-container">
+
+  <!-- FILE UPLOAD CARD -->
+  <section class="upload-card">
+
+    <h2>File Upload</h2>
+
+    <div class="drop-area" id="dropArea">
+      <p>Click or drag file to this area to upload</p>
+      <input id="csvFile" type="file" accept=".csv">
+    </div>
+
+    <!-- Upload Button -->
+    <button id="uploadCsvBtn" class="upload-btn">Upload File</button>
+
+    <p id="csvMsg" class="error"></p>
+
+    <div class="divider"><span></span>or<span></span></div>
+
+    <h3 class="manual-title">Enter manually</h3>
+
+    <!-- MANUAL ENTRY FORM (WORKING BACKEND FIELDS RESTORED) -->
+    <form id="addStudentForm" class="manual-form">
+
+      <input name="cms_id" id="admin_cms" class="input" placeholder="CMS" />
+
+      <input name="full_name" id="admin_name" class="input" placeholder="Full Name" />
+
+      <input name="room_no" id="admin_room" class="input" placeholder="Room" />
+
+      <!-- RESTORED ORIGINAL WORKING FIELDS -->
+      <input name="seat_row" id="admin_row" class="input" placeholder="Row" type="number" />
+
+      <input name="seat_col" id="admin_col" class="input" placeholder="Column" type="number" />
+
+      <div class="btn-row">
+        <button type="button" class="cancel-btn">Cancel</button>
+        <button type="submit" class="continue-btn">Continue</button>
+      </div>
+
+    </form>
+
+    <p id="manualMsg" class="error"></p>
+
+  </section>
+
+</main>
+
+<script src="js/script.js"></script>
+</body>
+</html>

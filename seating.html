@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Seating Arrangement</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- keep global styles (buttons, resets, etc.) -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- seating page specific styles -->
+  <link rel="stylesheet" href="css/seating.css">
+</head>
+<body class="seating-page">
+
+  <!-- TOP BLUE HEADER -->
+  <header class="seat-header">
+    <div class="seat-left">
+      <div class="seat-logo">
+        <img src="images/student-icon.png" alt="Student Icon">
+      </div>
+    </div>
+
+    <div class="seat-title-wrap">
+      <h1 class="seat-title">Seating Arrangement</h1>
+    </div>
+
+    <div class="seat-right">
+      <a href="index.html" class="seat-back">back to Lookup</a>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="seat-main">
+
+    <section class="seat-top-info">
+      <div class="seat-info-box">
+        <p><span class="info-label">Student name:</span> <span id="studentName">—</span></p>
+        <p><span class="info-label">CMS ID :</span> <span id="studentCMS">—</span></p>
+        <p><span class="info-label">Room No :</span> <span id="studentRoom">—</span></p>
+        <p><span class="info-label">Seat No :</span> <span id="studentSeat">—</span></p>
+      </div>
+    </section>
+
+    <section class="seat-grid-section">
+      <div class="seat-grid-card">
+        <div class="grid-header">
+          <div class="front-label">Front of Room</div>
+          <div id="gridSizeLabel" class="grid-size-label"></div>
+        </div>
+
+        <div id="gridContainer" class="grid" aria-label="Seating grid"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

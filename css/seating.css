@@ -1,0 +1,147 @@
+/* seating.css - page-scoped styles for seating.html */
+.seating-page {
+  margin: 0;
+  padding: 0;
+  background: #dbeaf6; /* soft blue background like Figma */
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color: #0f172a;
+}
+
+/* Top header */
+.seat-header {
+ background: #144a78;  
+  padding: 24px 40px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.seat-left { flex: 0 0 auto; }
+.seat-right { flex: 0 0 auto; }
+
+.seat-logo {
+ width: 90px;
+  height: 90px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.seat-logo img { width: 65px; height: 65px; display:block; }
+
+/* Title centered */
+.seat-title-wrap { flex: 1 1 auto; display:flex; justify-content:center; }
+.seat-title {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+}
+
+/* back link */
+.seat-back {
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* Main content container */
+.seat-main {
+  max-width: 1100px;
+  margin: 36px auto;
+  padding: 0 24px;
+}
+
+/* Info area */
+.seat-top-info {
+  margin-bottom: 28px;
+}
+.seat-info-box {
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+}
+.seat-info-box p {
+  margin: 8px 0;
+  font-size: 20px;
+  font-style: italic;
+}
+.info-label {
+  margin-right: 14px;
+  font-weight: 600;
+  font-style: normal;
+  color: #1b2e3f;
+}
+
+/* grid card */
+.seat-grid-section { display:flex; justify-content:center; }
+.seat-grid-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 18px 22px;
+  box-shadow: 0 8px 30px rgba(16,24,40,0.06);
+  width: fit-content;
+  min-width: 360px;
+}
+
+/* header inside grid */
+.grid-header {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:8px;
+}
+.front-label {
+  background: #eef4fa;
+  padding: 6px 14px;
+  border-radius: 24px;
+  font-weight: 600;
+  color: #344856;
+}
+.grid-size-label {
+  font-weight: 600;
+  color: #222;
+}
+
+/* Grid (seats) */
+.grid {
+  display: grid;
+  gap: 12px;
+  background: transparent;
+  padding: 8px;
+  justify-content: center;
+}
+
+/* seat style */
+.grid .seat {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  background: #f7fafc;
+  border: 2px dashed #d7dfe7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #7b8190;
+  font-weight: 600;
+  user-select: none;
+  box-sizing: border-box;
+}
+
+.grid .seat.active-seat {
+  background: #a61b1b; /* red-ish highlight to match Figma button accent */
+  color: white;
+  border-style: solid;
+  border-color: rgba(0,0,0,0.08);
+  box-shadow: 0 6px 20px rgba(166,23,23,0.12);
+  transform: translateY(-2px);
+}
+
+/* small responsive */
+@media (max-width: 880px) {
+  .seat-info-box { flex-direction: column; gap: 12px; }
+  .seat-grid-card { width: 100%; max-width: 760px; }
+  .grid .seat { width: 48px; height: 48px; }
+}

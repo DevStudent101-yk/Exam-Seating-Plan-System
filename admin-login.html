@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Admin Login</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/admin-login.css">
+</head>
+
+<body>
+  
+  <!-- Top Blue Header -->
+  <header class="top-header">
+    <div class="logo-circle">
+      <img src="images/student-icon.png" alt="logo">
+    </div>
+    <h1>Admin Login</h1>
+
+    <a href="index.html" class="back-link">back to Lookup</a>
+  </header>
+
+  <!-- Main Login Card -->
+  <main class="login-container">
+    <form id="adminLoginForm" class="login-card">
+
+      <label>Username</label>
+      <div class="input-row">
+        <input id="loginUsername" placeholder="Enter username" required>
+        <span class="icon">👤</span>
+      </div>
+
+      <label>Password</label>
+      <div class="input-row">
+        <input id="loginPassword" type="password" placeholder="Enter password" required>
+        <span class="icon">🔒</span>
+      </div>
+
+      <button class="login-btn" type="submit">LOGIN</button>
+
+      <!-- ⭐ Added Register Button (Same style theme) -->
+       <br>
+      <a href="admin-register.html" class="register-btn">Create Admin Account</a>
+
+      <p class="small-text" id="loginMsg"></p>
+    </form>
+  </main>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>

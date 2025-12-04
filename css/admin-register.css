@@ -1,0 +1,116 @@
+/* Background */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #d9e6f1;
+}
+
+/* Blue Header */
+.top-header {
+ background: #144a78; /* Figma dark blue */
+  padding: 24px 40px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  
+}
+
+.top-header h1 {
+  font-size: 28px;
+  margin: 0;
+  font-weight: 500;
+  color: white;
+
+}
+
+/* Circle Icon */
+.logo-circle {
+  width: 90px;
+  height: 90px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-circle img {
+   width: 65px;
+  height: 65px;
+}
+
+/* Main Form Container */
+.register-container {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* Card */
+.register-card {
+  width: 450px;
+  background: white;
+  padding: 35px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Labels */
+.register-card label {
+  margin-top: 14px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Underline Inputs */
+.input-row {
+  border-bottom: 2px solid #6b7280;
+  margin-bottom: 10px;
+}
+
+.input-row input {
+  width: 100%;
+  border: none;
+  background: transparent;
+  padding: 8px 0;
+  font-size: 15px;
+  outline: none;
+}
+
+/* Sign Up Button */
+.signup-btn {
+  margin-top: 25px;
+  background: #b51217;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  width: 100%;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.signup-btn:hover {
+  background: #9e0f14;
+}
+
+/* Login Text */
+.login-text {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.login-text a {
+  color: #b51217;
+  font-weight: bold;
+}
+
+/* Error Message */
+.error-msg {
+  margin-top: 10px;
+  color: red;
+  text-align: center;
+}
